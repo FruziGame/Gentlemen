@@ -1,0 +1,466 @@
+*{
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Montserrat" , sans-serif;
+}
+
+p,h1,h2,h3,h4,h5,h6 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+address {
+    font-style: normal;
+}
+
+ .container {
+    max-width: 1518px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: 0 auto;
+ }
+
+ a {
+    text-decoration: none;
+ }
+
+ a:visited {
+    text-decoration: none;
+ }
+ 
+
+/* ----------------------HEADER--------------------*/
+
+.hero {
+    background-image: url(images/backhero.jpg);
+    width: 1920px;
+    height: 1040px;
+}
+
+.header {
+    position: absolute;
+    top: 55px;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
+}
+
+
+.logo-wrap {
+    margin-right: 181px;
+    position: relative;
+    align-self: flex-start;
+}
+
+.header-logo {
+    margin-right: 181px;
+    position: absolute;
+    top: 50%;
+    left: 17px;
+    transform: translateY(-50%);
+}
+
+.header-list {
+    display: flex;
+    gap: 83px;
+}
+
+
+.header-item a {
+    /* hover #F5A956 */
+    color: #ffff;  
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+
+ 
+
+
+/* main */
+
+/* ----------------------HERO-------------- */
+
+.hero {
+    background-color: black;
+}
+
+.container-wrap {
+    padding-top: 365px;
+    padding-bottom: 462px;
+}
+
+.hero-title {
+    font-family: "Yeseva One", sans-serif;
+    font-weight: 400;
+    font-size: 48px;
+    color: #ffff;
+    max-width: 349px;
+    margin-bottom: 22px;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 20px;
+    color: #ffff;
+    margin-bottom: 30px;
+}
+
+.hero-button {
+    font-family: inherit;
+    background-color: #27459C;
+    color: #ffff;
+    border-radius: 2px;
+    width: 288px;
+    height: 71px;
+    font-weight: 700;
+    font-size: 14px;
+    cursor: pointer;
+    border: #27459C solid 2px;
+    border-radius: 4px;   
+}
+
+
+/* ----------------------SUIT-------------- */
+
+.suit {
+    background-color: #F4F4F4;
+    color: black;
+    padding-top: 108px;
+    padding-bottom: 75px;
+}
+
+
+.suit-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 57px;
+}
+
+
+/* ---------hover-------- */
+.suit-list-item:hover .icon-bag {
+ fill: #EF5151;
+}
+
+.suit-list-item:hover .suit-item-text {
+    color: #DB4C4C;
+}
+
+.suit-list-item:hover .suit-img {
+    transform: translateY(-5px); 
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.15);
+}
+/* ---------------------- */
+
+.suit-title {
+    font-family: "Yeseva One", sans-serif;
+    margin-bottom: 59px;
+    font-weight: 400;
+    font-size: 36px;
+    text-align: center;
+    color: #000;
+    position: relative;
+    display: block;
+}
+
+.suit-title::after {
+    position: absolute;
+    content: "";
+    bottom: -15px;
+    height: 3px;
+    width: 116px;
+    display: block;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+
+.suit-img {
+    display: block;
+    width: 458px;
+    height: auto;
+    transition: box-shadow 300ms ease;
+}
+
+.suit-item-text {
+    padding-top: 39px;
+    font-weight: 600;
+    font-size: 20px;
+    padding-bottom: 5px;
+    transition: color 300ms ease;
+}
+
+.icon-bag {
+    fill: #000000;
+    margin-top: -6px;
+    transition: fill 300ms ease;
+}
+
+.suit-item-price {
+    font-size: 18px;
+    padding-right: 334px;
+}
+
+.suit-container {
+    display: flex;
+    align-items: flex-end;
+}
+
+
+/* ---------------------suit-info------------ */
+
+.suit-info {
+    background-color: #E7EFFA;
+}
+
+
+/* --------------leade-form---------------- */
+
+
+.lead-form {
+    background-color: #FFFFFF;
+    padding-top: 82px;
+    padding-bottom: 78px;
+    /* width: 1920px;
+    height: 720px; */
+}
+
+.lead-text {
+    margin-bottom: 62px;
+    text-align: center;
+    position: relative;
+    font-family: "Yeseva One", sans-serif;
+
+    font-weight: 400;
+    font-size: 36px;
+    color: #000;
+}
+
+.lead-text::after {
+    position: absolute;
+    content: "";
+    bottom: -18px;
+    height: 3px;
+    width: 180px;
+    display: block;
+    background-color: #000;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+
+.form {
+    max-width: 609px;
+    text-align: center;
+    margin: 0 auto;
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px 33px;
+}
+
+.form-input {
+    width: 288px;
+    height: 71px;
+    border: 2px solid #000;
+    border-radius: 2px;
+    padding-left: 27px;
+
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.86;
+    color: #000;
+}
+
+.form-input::placeholder {
+    font-weight: 400;
+    font-size: 12px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-icon-wrap{
+    position: relative;
+}
+
+.lead-icon {
+    fill: rgba(0, 0, 0, 0.24);
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* .form-input:focus  .form-input::placeholder {
+    color: #000;
+} */
+
+.form-input:focus + .lead-icon {
+    fill: #000;
+}
+
+.option {
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.form-btn {
+    background-color: #db4c4c;
+    border: none;
+    border-radius: 2px;
+    width: 288px;
+    height: 71px;
+
+    font-weight: 700;
+    font-size: 14px;
+    text-align: center;
+    color: #fff;
+
+    margin: 0 auto;
+}
+
+.select {
+    -webkit-appearance: none; /* Скрываем стрелку в WebKit браузерах (Chrome, Safari, Opera) */
+    -moz-appearance: none; /* Скрываем стрелку в Firefox */
+    appearance: none; /* Скрываем стрелку в IE и Edge */
+    /* color: rgba(0, 0, 0, 0.5); */     
+}
+
+
+
+
+
+
+
+/* --------------------footer------------- */
+
+.footer {
+    background-color: #404D6F;
+    padding-top: 125px;
+    padding-bottom: 100px;
+}
+
+.footer-nav {
+    margin-right: 193px;
+}
+
+.footer-logo {
+    margin-right: 120px;
+}
+
+
+.footer-list-item a {
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+}
+
+
+
+.footer-list-item:not(:last-child) {
+    padding-bottom: 29px;
+}
+
+.footer-contacts {
+    margin-right: 199px;
+}
+
+.footer-icon-phone {
+    fill: #FFFFFF;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+.phone-list {
+    padding-left: 53px;;
+    position: relative;
+}
+
+.phone-list-item {
+    display: block;
+    font-weight: 700;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 7px;
+}
+
+.footer-button {
+    font-weight: 700;
+    font-size: 14px;
+    color: #fff;
+    border: none;
+
+    border-radius: 2px;
+    width: 288px;
+    height: 71px;
+    background-color: #ef5151;
+    margin-top: 46px;
+}
+
+
+
+
+
+.footer-info {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+.footer-info:not(:last-child) {
+    margin-bottom: 100px; /* або будь-яке значення, яке вам потрібно */
+}
+
+.footer-text {
+    display: block;
+    font-weight: 500;
+    font-size: 18px;
+    color: #fff;
+    text-decoration: none;
+    margin-bottom: 7px;
+}
+
+.footer-email {
+    margin-bottom: 52px;
+}
+
+
+.info-icons {
+    display: flex;
+    gap: 21px;
+}
+
+.info-icon {
+    fill: #FFFFFF;
+}
+
+
+.footer-first {
+    display: flex;
+    justify-content: center;
+
+    /* justify-content: space-between; */
+}
+
+
+
+
